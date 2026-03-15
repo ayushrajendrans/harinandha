@@ -19,7 +19,7 @@ export const Contact = () => {
                         </motion.h2>
                         <div className="w-20 h-1 bg-purple-500 mx-auto rounded-full mb-6"></div>
                         <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                            Have a project in mind or just want to say hi? I'd love to hear from you.
+                            Have a project in mind or just want to say hi? I&apos;d love to hear from you.
                         </p>
                     </div>
 
@@ -58,9 +58,9 @@ export const Contact = () => {
 
                             <div className="p-8 bg-white rounded-[2rem] border border-slate-100 shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-purple-50 rounded-full -mr-16 -mt-16 blur-3xl opacity-50"></div>
-                                <h4 className="text-xl font-bold font-poppins text-slate-900 mb-4">Let's collaborate</h4>
+                                <h4 className="text-xl font-bold font-poppins text-slate-900 mb-4">Let&apos;s collaborate</h4>
                                 <p className="text-slate-600 mb-6 leading-relaxed">
-                                    I'm currently available for freelance work and full-time opportunities.
+                                    I&apos;m currently available for freelance work and full-time opportunities.
                                 </p>
                                 <div className="flex space-x-4">
                                     {/* Social icons could go here */}

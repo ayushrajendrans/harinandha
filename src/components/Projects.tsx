@@ -76,7 +76,7 @@ export const Projects = () => {
                                                         <div className="min-w-[280px] h-full bg-white rounded-3xl border border-slate-100 shadow-sm p-5 flex flex-col">
                                                             <div className="flex items-center gap-3 mb-6">
                                                                 <div className="w-10 h-10 rounded-full overflow-hidden border border-slate-100">
-                                                                    <img src="/images/fitness/profile.png" alt="Profile" className="w-full h-full object-cover" />
+                                                                    <img src="/images/fitness/profile.png" alt="Profile" width={40} height={40} className="w-full h-full object-cover" />
                                                                 </div>
                                                                 <div>
                                                                     <p className="text-[10px] text-slate-400 font-medium">Ann Maria</p>
@@ -105,11 +105,11 @@ export const Projects = () => {
 
                                                                 <div>
                                                                     <div className="flex justify-between items-center mb-2">
-                                                                        <p className="text-[10px] font-bold text-slate-800">Today's Workout</p>
+                                                                        <p className="text-[10px] font-bold text-slate-800">Today&apos;s Workout</p>
                                                                         <p className="text-[8px] text-[#8B2E2E] font-bold">See All ›</p>
                                                                     </div>
                                                                     <div className="relative rounded-2xl overflow-hidden aspect-[16/9] shadow-md group/workout">
-                                                                        <img src="/images/fitness/workout_today.png" alt="Workout" className="w-full h-full object-cover" />
+                                                                        <img src="/images/fitness/workout_today.png" alt="Workout" width={280} height={158} className="w-full h-full object-cover" />
                                                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                                                         <div className="absolute bottom-2 left-3">
                                                                             <p className="text-[10px] font-black text-white italic">15 MIN</p>
@@ -168,7 +168,7 @@ export const Projects = () => {
                                                             </div>
                                                             <div className="flex-1 p-6 flex flex-col items-center">
                                                                 <div className="w-full aspect-square rounded-3xl overflow-hidden shadow-2xl mb-6 border border-white/10">
-                                                                    <img src="/images/fitness/album_art.png" alt="Album" className="w-full h-full object-cover" />
+                                                                    <img src="/images/fitness/album_art.png" alt="Album" width={280} height={280} className="w-full h-full object-cover" />
                                                                 </div>
                                                                 <div className="w-full text-left mb-6">
                                                                     <p className="text-sm font-black text-white tracking-tight">Paris</p>
@@ -203,7 +203,7 @@ export const Projects = () => {
                                                                     { l: 'Strength', t: '15 min', img: '/images/fitness/strength.png' }
                                                                 ].map(workout => (
                                                                     <div key={workout.l} className="relative h-24 rounded-2xl overflow-hidden group/item cursor-pointer">
-                                                                        <img src={workout.img} alt={workout.l} className="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-500" />
+                                                                        <img src={workout.img} alt={workout.l} width={260} height={96} className="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-500" />
                                                                         <div className="absolute inset-0 bg-black/40 group-hover/item:bg-black/20 transition-colors"></div>
                                                                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                                                                             <p className="text-xs font-black text-white italic uppercase tracking-widest">{workout.l}</p>
