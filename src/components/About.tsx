@@ -32,7 +32,7 @@ export const About = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8 }}
-                        className="relative h-[400px] flex items-center justify-center"
+                        className="relative h-[400px] hidden lg:flex items-center justify-center"
                     >
                         <div className="absolute inset-0 bg-gradient-to-tr from-purple-200 to-blue-200 rounded-[3rem] transform rotate-3 scale-105 opacity-50 blur-lg"></div>
 
