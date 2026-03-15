@@ -14,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Harinanda A K | UI/UX Designer",
-  description: "Portfolio of Harinanda A K, a UI/UX Designer crafting intuitive digital experiences.",
+  title: "Harinandha A K | UI/UX Designer",
+  description: "Portfolio of Harinandha A K, a UI/UX Designer crafting intuitive digital experiences.",
 };
 
 import { cn } from "@/lib/utils";

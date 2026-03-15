@@ -111,7 +111,7 @@ export const Hero = () => {
                         transition={{ duration: 0.7, delay: 0.1 }}
                         className="text-5xl md:text-7xl font-bold font-poppins tracking-tight mb-4 text-slate-900"
                     >
-                        Harinanda A K
+                        Harinandha A K
                     </motion.h1>
 
                     <motion.h2
