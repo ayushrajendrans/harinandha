@@ -26,34 +26,70 @@ export const Hero = () => {
                     className="absolute top-1/3 right-1/4 w-[28rem] h-[28rem] bg-blue-300 rounded-full mix-blend-multiply filter blur-[128px] opacity-30"
                 />
 
-                {/* Concentrated 3D Elements in Hero */}
+                {/* Pronounced 3D Elements in Hero */}
+                {/* 3D Orb 1 - Purple/Pink */}
                 <motion.div
                     animate={{
-                        y: [0, -20, 0],
+                        y: [-20, 20, -20],
+                        x: [-10, 10, -10],
+                    }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-[20%] right-[15%] w-32 h-32 md:w-48 md:h-48 rounded-full z-0"
+                    style={{
+                        background: 'radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 1) 0%, rgba(236, 72, 153, 0.9) 20%, rgba(168, 85, 247, 0.8) 60%, rgba(88, 28, 135, 1) 100%)',
+                        boxShadow: 'inset -10px -10px 20px rgba(0,0,0,0.3), 0 20px 40px rgba(0,0,0,0.2), 0 0 40px rgba(236, 72, 153, 0.3)',
+                    }}
+                />
+
+                {/* 3D Orb 2 - Blue */}
+                <motion.div
+                    animate={{
+                        y: [20, -20, 20],
+                        x: [10, -10, 10],
+                        scale: [1, 1.05, 1],
+                    }}
+                    transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                    className="absolute bottom-[20%] left-[8%] w-24 h-24 md:w-32 md:h-32 rounded-full z-0"
+                    style={{
+                        background: 'radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 1) 0%, rgba(96, 165, 250, 0.9) 20%, rgba(59, 130, 246, 0.8) 60%, rgba(30, 58, 138, 1) 100%)',
+                        boxShadow: 'inset -8px -8px 16px rgba(0,0,0,0.3), 0 15px 30px rgba(0,0,0,0.2), 0 0 30px rgba(59, 130, 246, 0.3)',
+                    }}
+                />
+
+                {/* Floating Glass Cube */}
+                <motion.div
+                    animate={{
                         rotateX: [0, 360],
-                        rotateY: [0, 180],
+                        rotateY: [0, 360],
+                        y: [-15, 15, -15],
                     }}
-                    transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-[20%] right-[15%] w-24 h-24 glass rounded-2xl border border-white/40 shadow-xl opacity-40 blur-[0.5px] hidden md:block"
-                    style={{ perspective: 1000 }}
+                    transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                    className="absolute top-[60%] right-[30%] w-20 h-20 md:w-24 md:h-24 rounded-2xl hidden md:block z-0"
+                    style={{
+                        background: 'linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.1))',
+                        backdropFilter: 'blur(10px)',
+                        boxShadow: 'inset 2px 2px 5px rgba(255,255,255,0.8), inset -2px -2px 5px rgba(0,0,0,0.1), 0 15px 25px rgba(0,0,0,0.15)',
+                        border: '1px solid rgba(255,255,255,0.5)',
+                        transformStyle: 'preserve-3d',
+                    }}
                 />
 
+                {/* Metallic Ring */}
                 <motion.div
                     animate={{
-                        y: [0, 30, 0],
-                        rotate: [0, -360],
+                        rotateX: [0, 180, 360],
+                        rotateY: [0, 180, 360],
+                        y: [-30, 30, -30],
                     }}
-                    transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-                    className="absolute bottom-[25%] left-[10%] w-20 h-20 glass rounded-full border border-white/30 shadow-xl opacity-30 blur-[1px] hidden md:block"
-                />
-
-                <motion.div
-                    animate={{
-                        scale: [1, 1.1, 1],
-                        rotate: [45, 405],
+                    transition={{ duration: 20, repeat: Infinity, ease: "linear", delay: 2 }}
+                    className="absolute top-[25%] left-[20%] w-20 h-20 md:w-28 md:h-28 hidden md:block z-0"
+                    style={{
+                        borderRadius: "50%",
+                        border: "16px solid transparent",
+                        background: "linear-gradient(#f8fafc, #f8fafc) padding-box, linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(59, 130, 246, 0.8)) border-box",
+                        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25), inset 0 10px 20px rgba(0,0,0,0.2)",
+                        transformStyle: "preserve-3d",
                     }}
-                    transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-[40%] left-[20%] w-16 h-16 glass rounded-xl border border-white/30 shadow-xl opacity-25 blur-[1.5px] hidden md:block"
                 />
             </div>
 
