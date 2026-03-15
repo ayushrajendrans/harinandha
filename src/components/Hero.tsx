@@ -14,7 +14,7 @@ export const Hero = () => {
                         x: [0, 50, 0],
                     }}
                     transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-[128px] opacity-30"
+                    className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-[128px] opacity-30 hidden md:block"
                 />
                 <motion.div
                     animate={{
@@ -23,7 +23,7 @@ export const Hero = () => {
                         x: [0, -50, 0],
                     }}
                     transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                    className="absolute top-1/3 right-1/4 w-[28rem] h-[28rem] bg-blue-300 rounded-full mix-blend-multiply filter blur-[128px] opacity-30"
+                    className="absolute top-1/3 right-1/4 w-[28rem] h-[28rem] bg-blue-300 rounded-full mix-blend-multiply filter blur-[128px] opacity-30 hidden md:block"
                 />
 
                 {/* Pronounced 3D Elements in Hero */}
@@ -34,7 +34,7 @@ export const Hero = () => {
                         x: [-10, 10, -10],
                     }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-[20%] right-[15%] w-32 h-32 md:w-48 md:h-48 rounded-full z-0"
+                    className="absolute top-[20%] right-[15%] w-32 h-32 md:w-48 md:h-48 rounded-full z-0 hidden md:block"
                     style={{
                         background: 'radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 1) 0%, rgba(236, 72, 153, 0.9) 20%, rgba(168, 85, 247, 0.8) 60%, rgba(88, 28, 135, 1) 100%)',
                         boxShadow: 'inset -10px -10px 20px rgba(0,0,0,0.3), 0 20px 40px rgba(0,0,0,0.2), 0 0 40px rgba(236, 72, 153, 0.3)',
@@ -49,7 +49,7 @@ export const Hero = () => {
                         scale: [1, 1.05, 1],
                     }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                    className="absolute bottom-[20%] left-[8%] w-24 h-24 md:w-32 md:h-32 rounded-full z-0"
+                    className="absolute bottom-[20%] left-[8%] w-24 h-24 md:w-32 md:h-32 rounded-full z-0 hidden md:block"
                     style={{
                         background: 'radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 1) 0%, rgba(96, 165, 250, 0.9) 20%, rgba(59, 130, 246, 0.8) 60%, rgba(30, 58, 138, 1) 100%)',
                         boxShadow: 'inset -8px -8px 16px rgba(0,0,0,0.3), 0 15px 30px rgba(0,0,0,0.2), 0 0 30px rgba(59, 130, 246, 0.3)',

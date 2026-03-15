@@ -16,7 +16,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-200/30 blur-[100px] rounded-full"
+                className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-200/30 blur-[100px] rounded-full hidden md:block"
             />
             <motion.div
                 animate={{
@@ -29,7 +29,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-[20%] right-[-5%] w-[400px] h-[400px] bg-blue-200/30 blur-[100px] rounded-full"
+                className="absolute top-[20%] right-[-5%] w-[400px] h-[400px] bg-blue-200/30 blur-[100px] rounded-full hidden md:block"
             />
             <motion.div
                 animate={{
@@ -42,7 +42,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute bottom-[-5%] left-[20%] w-[450px] h-[450px] bg-emerald-100/30 blur-[100px] rounded-full"
+                className="absolute bottom-[-5%] left-[20%] w-[450px] h-[450px] bg-emerald-100/30 blur-[100px] rounded-full hidden md:block"
             />
 
             {/* 3D-style Floating Geometric Elements - Enhanced visibility and quantity */}
@@ -57,7 +57,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "easeInOut"
                 }}
-                className="absolute top-[10%] left-[5%] w-32 h-32 glass rounded-3xl border border-white/40 shadow-2xl opacity-50 blur-[0.5px]"
+                className="absolute top-[10%] left-[5%] w-32 h-32 glass rounded-3xl border border-white/40 shadow-2xl opacity-50 blur-[0.5px] hidden md:block"
                 style={{ perspective: 1200 }}
             />
 
@@ -72,7 +72,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-[45%] right-[5%] w-40 h-40 glass rounded-full border border-white/30 shadow-2xl opacity-30 blur-[1px]"
+                className="absolute top-[45%] right-[5%] w-40 h-40 glass rounded-full border border-white/30 shadow-2xl opacity-30 blur-[1px] hidden md:block"
             />
 
             <motion.div
@@ -87,7 +87,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "easeInOut"
                 }}
-                className="absolute bottom-[20%] left-[10%] w-28 h-28 glass rounded-2xl border border-white/40 shadow-2xl opacity-40 blur-[0.5px]"
+                className="absolute bottom-[20%] left-[10%] w-28 h-28 glass rounded-2xl border border-white/40 shadow-2xl opacity-40 blur-[0.5px] hidden md:block"
                 style={{ perspective: 1200 }}
             />
 
@@ -102,7 +102,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "easeInOut"
                 }}
-                className="absolute top-[35%] left-[40%] w-20 h-20 glass rounded-xl border border-white/30 shadow-2xl opacity-25 blur-[2px]"
+                className="absolute top-[35%] left-[40%] w-20 h-20 glass rounded-xl border border-white/30 shadow-2xl opacity-25 blur-[2px] hidden md:block"
             />
 
             {/* Additional Floating Rings for extra flair */}
@@ -117,7 +117,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-[70%] left-[80%] w-36 h-36 rounded-full border-[8px] border-purple-200/20 blur-[1px]"
+                className="absolute top-[70%] left-[80%] w-36 h-36 rounded-full border-[8px] border-purple-200/20 blur-[1px] hidden md:block"
                 style={{ perspective: 1000 }}
             />
 
@@ -131,7 +131,7 @@ export const Background = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-[25%] left-[60%] w-24 h-24 rounded-full border-[6px] border-blue-200/20 blur-[1px]"
+                className="absolute top-[25%] left-[60%] w-24 h-24 rounded-full border-[6px] border-blue-200/20 blur-[1px] hidden md:block"
                 style={{ perspective: 1000 }}
             />
         </div>
